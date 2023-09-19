@@ -26,3 +26,8 @@ resource "aws_instance" "ubuntu" {
     Name = var.instance_name
   }
 }
+
+policy "less-than-100-month" {
+  enforcement_level = "soft-mandatory"
+}
+
